@@ -1,0 +1,23 @@
+CREATE DATABASE PetShop;
+
+USE PetShop;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT,
+    name VARCHAR(25),
+    email VARCHAR(25) UNIQUE,
+    password VARCHAR(255),
+    isAdmin BOOLEAN,
+    PRIMARY KEY (id)
+);
+CREATE TABLE goods (
+    id INT AUTO_INCREMENT,
+    creator INT,
+    date TIMESTAMP DEFAULT NOW(),
+    img TEXT,
+    name VARCHAR(32),
+    description TEXT,
+    count INT DEFAULT 1,
+    PRIMARY KEY (id),
+    FOREIGN KEY (creator) REFERENCES users(id)
+);

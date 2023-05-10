@@ -1,0 +1,238 @@
+header{
+    background-color: #32b098;
+    
+}
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+}
+.nav-item{
+  display: block;
+  padding: 0 8px;
+}
+.nav-item>a{
+    height: 80px;
+    color: white ;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-item>a:hover{
+  }
+
+
+
+
+.page {
+    padding: 10px 80px
+}
+
+
+
+.license {
+    margin-top: 120px;
+    display: flex;
+    column-gap: 64px ;
+    justify-content: center;
+}
+.marks {
+    color: white;
+    background-image: url(https://cdn.pixabay.com/photo/2022/10/18/17/56/bird-7530845_960_720.jpg);
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    column-gap: 46px;
+    padding: 32px;
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px; 
+    width: 180px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 50%;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+.reviews {
+    margin-top: 64px;
+}
+.reviews>h3{
+    margin-bottom: 24px;
+}
+.review{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 16px;
+}
+.review>img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.review>div>p{ margin: 0;}
+.review>div>h5{
+    margin: 0;
+    color: #32b098;
+}
+
+.diplomas {
+    max-width: 40%;
+}
+.diplomas>h2{
+    margin-bottom: 32px;
+}
+.diploma {
+    display: flex;
+    column-gap: 12px;
+    align-content: center;
+}
+.diploma-date {
+margin-top: 16px;
+    color: #32b098;
+}
+.diploma-date::first-line {
+    border: 2px solid #32b098;
+    border-radius: 4px;
+}
+.diploma-date {
+  
+}
+.diploma-description {
+    max-width: 60%;
+}
+
+.featured {
+    display: flex;
+    align-items: center;
+}
+.featured-description {
+    max-width: 34%;
+    padding: 36px;
+}
+.featured-description>h5, .featured-products>h2{
+    font-weight: bold;
+}
+.goto-link>a {
+    color: #32b098;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.goto-link::after{
+    font-weight: bold;
+    color: #32b098;
+    content: ">";
+}
+
+
+.featured-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.product {
+    text-align: center;
+    padding: 22px 26px;
+    border-right: 1px dashed rgb(156, 156, 156);
+}
+.product>img {
+    height: 160px; width: 160px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+    background-position: center;
+    background-size: contain
+    
+}
+.product-btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #32b098;
+    color: white;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 50px;
+
+    margin-top: 10px;
+}
+
+.product:last-child{ border: none; }
+
+.shop-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+.full-screen-banner {
+    background-image: url(https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    height: 95vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 156px 80px;
+}
+.full-screen-banner-description {
+    max-width: 33%;
+}
+.full-screen-banner-description>ol{
+    margin: 16px 0 22px 0;
+}
+.full-screen-banner-description>a{
+   background-color: white;
+   color: black;
+   text-decoration: none;
+   border: none;
+   padding: 5px 24px;
+   font-size: large;
+}
+.login-form {
+    background-color: white;
+    color: black;
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+
+    padding: 24px;
+}
+
+.login-form > input{
+    width: 100%;
+    padding: 6px 2px;
+    margin-top: 8px;
+    border: 1px solid rgb(143, 143, 143);
+}
+
+.login-form-submit{
+    background-color: #32b098;
+    color: white;
+    font-weight: bold;
+    border: none !important;
+}
+
+.invalid{
+    background-color: #ca7e42;
+}
+
+footer{
+    min-height: 120px;
+    background-color: #32b098;
+}
